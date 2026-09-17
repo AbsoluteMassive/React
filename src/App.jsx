@@ -1,5 +1,5 @@
 import Title from "./components/Title";
-import VariableDisplay from "./components/VariableDisplay";
+import { VariableDisplay, List } from "./components/VariableDisplay";
 
 import ProfileCard from "./components/ProfileCard";
 function App() {
@@ -40,6 +40,7 @@ function App() {
         ))}
       </div>
       <VariableDisplay />
+      <List array={people} />
     </div>
   );
 }

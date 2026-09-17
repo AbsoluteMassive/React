@@ -1,4 +1,4 @@
-const VariableDisplay = () => {
+export const VariableDisplay = () => {
   // boolean is not shown
   // obj without property throws "Objects are not valid as a React child"
   let string = "string";
@@ -21,4 +21,16 @@ const VariableDisplay = () => {
   );
 };
 
-export default VariableDisplay;
+export function List({ array }) {
+  return (
+    <div>
+      <ul>
+        {array.map((item) => (
+          <li key={item.name}>
+            {item.name} ({item.jobTitle}).
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
