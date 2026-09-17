@@ -6,11 +6,11 @@ const ProfileCard = ({
   user-friendly websites and learning new technologies. I 
   am a passionate web developer who enjoys building responsive, 
   user-friendly websites and learning new technologies.
-  I am a passionate web developer who enjoys building responsive, 
+ I am a passionate web developer who enjoys building responsive, 
   user-friendly websites and learning new technologies.`,
 }) => {
   return (
-    <div className="card p-3 m-1" style={{ width: "25rem" }}>
+    <div className="card p-3 m-2 " style={{ width: "25rem" }}>
       <div className="d-flex align-items-center">
         <img
           src={image}

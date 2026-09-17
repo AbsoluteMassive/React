@@ -24,10 +24,11 @@ export const VariableDisplay = () => {
 export function List({ array }) {
   return (
     <div>
-      <ul>
+      <ul className="list-group">
         {array.map((item) => (
-          <li key={item.name}>
-            {item.name} ({item.jobTitle}).
+          <li className="list-group-item" key={item.name}>
+            {item.name}
+            {<br></br>} {item.jobTitle}
           </li>
         ))}
       </ul>
