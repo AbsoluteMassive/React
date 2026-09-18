@@ -3,7 +3,7 @@ import { VariableDisplay, List } from "./components/VariableDisplay";
 import ProfileCard from "./components/ProfileCard";
 import JobBoard from "./components/JobBoard";
 import StyledButton from "./components/StyledButton";
-import JobCounter from "./components/JobCounter";
+import AdvancedJobCounter from "./components/AdvanceJobCounter";
 function App() {
   const person1 = {
     image: "https://placehold.co/200x200",
@@ -45,7 +45,7 @@ function App() {
       <List array={people} />
       <JobBoard jobCount={0} />
       <StyledButton />
-      <JobCounter />
+      <AdvancedJobCounter />
     </div>
   );
 }
