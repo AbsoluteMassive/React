@@ -28,7 +28,7 @@ const StyledButton = () => {
   };
   function disabledButton() {
     setIsDisabled(true);
-    setText("The button is disabled");
+    setText("The button is disabledbjs");
   }
   return (
     <div className="container">
