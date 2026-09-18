@@ -1,5 +1,5 @@
 const JobBoard = ({ jobCount = 0 }) => {
-  // jobCount has a prop to allow reusability(App.jsx )
+  // jobCount as a prop to allow reusability(App.jsx )
   // change jobCount value here(default) or in the App.jsx
   // (0, 4, 5+, negative) to see all messages
 

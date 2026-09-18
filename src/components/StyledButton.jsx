@@ -26,9 +26,9 @@ const StyledButton = () => {
     border: " 1px solid transparent",
     borderRadius: "5px",
   };
-  function hnadleDisabled() {
+  function handleDisabled() {
     setIsDisabled(true);
-    setText("The button is disabledbjs");
+    setText("The button is disabled");
   }
   return (
     <div className="container">
@@ -36,7 +36,7 @@ const StyledButton = () => {
       <button
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        onClick={hnadleDisabled}
+        onClick={handleDisabled}
         className="btn"
         style={buttonStyle}
         disabled={isDisabled}
