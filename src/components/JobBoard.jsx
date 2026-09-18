@@ -1,8 +1,7 @@
 const JobBoard = ({ jobCount = 0 }) => {
-  // jobCount has prop to allow reusability
+  // jobCount has a prop to allow reusability(App.jsx )
   // change jobCount value here(default) or in the App.jsx
-  // (0, 4, 5+, negative) to see messages all messages
-  // ctrl f JobBoard to find the component in App.jsx
+  // (0, 4, 5+, negative) to see all messages
 
   const expectedCount = jobCount < 0 ? 0 : Math.round(jobCount * 1.5);
   const companyName = "TechCorp";

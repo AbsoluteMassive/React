@@ -1,8 +1,8 @@
 import Title from "./components/Title";
 import { VariableDisplay, List } from "./components/VariableDisplay";
-
 import ProfileCard from "./components/ProfileCard";
 import JobBoard from "./components/JobBoard";
+import StyledButton from "./components/StyledButton";
 function App() {
   const person1 = {
     image: "https://placehold.co/200x200",
@@ -30,7 +30,7 @@ function App() {
     six NBA championships, and global 
     influence on the sport.`,
   };
-  const people = [person1, person2, person3, person1, person1, person3];
+  const people = [person1, person2, person3];
 
   return (
     <div className="container">
@@ -43,6 +43,7 @@ function App() {
       <VariableDisplay />
       <List array={people} />
       <JobBoard jobCount={0} />
+      <StyledButton />
     </div>
   );
 }
